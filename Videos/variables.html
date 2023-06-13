@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let name = "Sirgourny";           // String variable
+        let age = 36;                 // Integer variable
+        let gpa = 3.89;                  // Floating variable
+        const hometown = "Gulfport";    // Constant variable [does not change]
+
+        let isSirgournyCool = true;  // Boolean variable
+
+        // Object variable
+        let family = ["Sirgourny", " Ava", " WooWoo", " G-ma Zela"];
+
+        //document.getElementById("output").innerHTML = name + " is " + age + " years old and is from " + hometown + ".";
+
+        gpa = 3.2;  // Reassigned the value of GPA
+        // Cannot change value of a constant
+        // hometown = Americus;
+
+        document.getElementById("output").innerHTML = family;
+        console.log(family);   // Now I will output the gpa
+
+    </script>
+</body>
+</html>

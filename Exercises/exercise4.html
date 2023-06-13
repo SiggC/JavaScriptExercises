@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+</head>
+<body>
+    <div id="output"></div>
+    <div id="memberFees"></div>
+    <div id="additionalFees"></div>
+    <div id="subTotal"></div>
+    <div id="discount"></div>
+    <div id="finalBill"></div>
+    <div id="tax"></div>
+    <div id="grandTotal"></div>
+    <script>
+        let amount = prompt("How much did the member spend this month in additional charges?");
+        
+        let memberFee = Number(500);
+        let subTotal = Number(amount) + memberFee;
+        let discount = " ";
+        // let discountTotal = Number(subTotal/100) * discount;
+        // let finTotal = subTotal - Number(discountTotal);
+        // let grandTotal = Number(finTotal + tax);
+
+        
+
+        if (amount >= 250 & amount <= 500) {
+            discount = 10;
+        } 
+          else if (amount >= 501 && amount <= 1000) {
+            discount = 12.5;
+        } 
+          else if (amount >= 1001 && amount <= 2000) {
+            discount = 15;
+        } 
+          else if (amount >= 2001) {
+            discount = 20;
+        }
+          else {
+            discount = 0;
+          }
+
+        let discountTotal = Number(subTotal / 100) * discount;
+        let finTotal = subTotal - Number(discountTotal);
+        let tax = Number(6.25);
+        let taxAdd = (finTotal/100) * tax;
+        let grandTotal = Number(finTotal + taxAdd);
+        grandTotal = grandTotal.toFixed(2)
+        console.log(finTotal);
+        console.log(grandTotal);
+
+        document.getElementById("output").innerHTML = "<h2>Your Bill Receipt<br></h2>";
+        document.getElementById("memberFees").innerHTML = "Membership Fee: " + "$" + memberFee;
+        document.getElementById("additionalFees").innerHTML = "Additonal Fees: " + "$" + amount;
+        document.getElementById("subTotal").innerHTML = "Subtotal: " + "$" + subTotal;
+        document.getElementById("discount").innerHTML = "Discount: " + discount + "%";
+        document.getElementById("finalBill").innerHTML = "Final Bill: " + "$" + finTotal;
+        document.getElementById("tax").innerHTML = "Tax: " + tax;
+        document.getElementById("grandTotal").innerHTML = "Grand Total: " + grandTotal;
+
+    </script>
+    
+</body>
+</html>

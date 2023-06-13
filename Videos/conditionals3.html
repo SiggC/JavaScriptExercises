@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        //****** USING THE HARD CODE METHOD ******
+
+        /* let age = 35;
+        let citizen = true; */
+
+        //****** USING THE prompt() METHOD ******
+
+        let age = prompt("What is your age?");
+        /* let citizen = true; */
+        let citizen = prompt("Are you a US citizen?");
+
+        if(age >= 18 && citizen == "yes"){
+            document.getElementById("output").
+            innerHTML = "You are eligible to vote!";
+        }
+        else {
+            document.getElementById("output").
+            innerHTML = "You are not eligible to vote!";
+        }
+    </script>
+    
+</body>
+</html>

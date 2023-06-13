@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        let operand1 = 24;
+        let operand2 = 84;
+
+        let sum = operand1 + operand2;
+        let subtraction = operand1 - operand2;
+        let multiplication = operand1 * operand2;
+        let division = (operand2 / operand1);
+        let division2 = Math.round(operand2 / operand1);
+        let mod = 11 % 6;
+        /* console.log(sum);
+        console.log(subtraction);
+        console.log(multiplication);
+        console.log(division);
+        console.log(mod); */
+        console.log(sum, subtraction, multiplication, division, division2, mod);
+
+        //PEMDAS
+        let complex = 45 / 9 + 2 * 3;
+        let complex2 = 45 / (9 + 2) * 3;
+        let complex3 = Math.round(45 / (9 + 2) * 3);
+        console.log(complex);
+        console.log(complex2);
+        console.log(complex3);
+
+        let divByZero = 198 /0;
+        console.log(divByZero);
+    </script>
+</body>
+</html>
