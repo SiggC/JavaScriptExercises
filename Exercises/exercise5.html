@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+<body>
+    <div id="day"></div>
+
+    <div>
+        <ol>
+            <h2>Fruit Menu</h2>
+            <li>Apple &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$.99</h1></li>
+            <li>Pear &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$.79</li>
+            <li>Orange &nbsp &nbsp &nbsp &nbsp &nbsp$1.19</li>
+            <li>Grapes &nbsp &nbsp &nbsp &nbsp &nbsp$1.49</li>
+            <li>Grapefruit &nbsp &nbsp$1.79</li>
+            <li>Kiwi &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp$.79</li>
+            <li>Apricots &nbsp &nbsp &nbsp &nbsp$1.29</li>
+        </ol>
+    </div>
+
+    
+    <div id="apple"></div>
+    <div id="pear"></div>
+    <div id="orange"></div>
+    <div id="grape"></div>
+    <div id="grapefruit"></div>
+    <div id="kiwi"></div>
+    <div id="apricot"></div>
+    <div id="count"></div>
+    <div id="price"></div>
+    <div id="total"></div>
+
+    <script>
+        let day = prompt("Enter a Day of The Week.");
+            switch (day) {
+                case "1":
+                    console.log("Sunday");
+                        break;
+                case "2":
+                    console.log("Monday");
+                        break;
+                case "3":
+                    console.log("Tuesday");
+                        break;
+                case "4":
+                    console.log("Wednesday");
+                        break;
+                case "5":
+                    console.log("Thursday");
+                        break;
+                case "6":
+                    console.log("Friday");
+                        break;
+                case "7":
+                    console.log("Saturday");
+            }
+
+        let apple = Number(.99);
+        let pear = Number(.79);
+        let orange = Number(.19);
+        let grapes = Number(1.49);
+        let grapefruit = Number(1.79);
+        let kiwi = Number(.79);
+        let apricots = Number(1.29);
+
+        if (day <= 7) {
+            let count;
+            let price;
+            let menu = prompt("Which fruit would you like to purchase [1-7]");
+                switch (menu) {
+                    case "1":
+                        ("apple");
+                        price = .99;
+                        count = prompt("How many apples");
+                        document.getElementById("total").innerHTML = count + "Apples  " + "&nbsp&nbsp&nbsp&nbsp" + "  $" + Number(price * count);
+                            break
+                    case "2":
+                        ("pear");
+                        price = .79;
+                        count = prompt("How many pears");
+                        document.getElementById("total").innerHTML = count + "Pears" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                            break;
+                    case "3":
+                        ("orange");
+                        price = 1.19;
+                        count = prompt("How many oranges");
+                        document.getElementById("total").innerHTML = count + "Oranges" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                            break;
+                    case "4":
+                        ("grapes");
+                        price = 1.49;
+                        count = prompt("How many grapes");
+                        document.getElementById("total").innerHTML = count + "Grapes" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                            break;
+                    case "5":
+                        ("grapefruit");
+                        price = 1.79;
+                        count = prompt("How many grapefruit");
+                        document.getElementById("total").innerHTML = count + "Grapefruits" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                            break;
+                    case "6":
+                        ("kiwi");
+                        price = .79;
+                        count = prompt("How many kiwis");
+                        document.getElementById("total").innerHTML = count + "Kiwis" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                            break;
+                    case "7":
+                        ("apricots");
+                        price = 1.29;
+                        count = prompt("How many apricots");
+                        document.getElementById("total").innerHTML = count + "Apricots" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+            }
+        }
+          else {
+            document.getElementById("day").innerHTML = ("Sorry, I can't help you.");
+        }
+
+        
+
+            /* if (menu = "apple") {
+            let count = prompt ("How many apples?");
+            }
+                else if (menu = "Pear") {
+                     prompt ("How many pears?");
+                } 
+                else if (menu = "Orange") {
+                    let count = prompt ("How many oranges?");
+                } 
+                else if (menu = "Grapes") {
+                    let count = prompt ("How many grapes?");
+                }
+                else if (menu = grapefruit) {
+                    let count = prompt ("How many grapefruit?");
+                }
+                else if (menu = "Kiwi") {
+                    let count = prompt ("How many kiwis?");
+                }
+                else if (menu = "Apricots") {
+                    let count = prompt ("How many apricots?");
+                }
+                else {
+                    ("Sorry, but I can't help you.");
+          } */
+
+    </script>
+    
+</body>
+</html>
