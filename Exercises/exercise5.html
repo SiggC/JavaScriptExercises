@@ -59,60 +59,70 @@
                     console.log("Saturday");
             }
 
-        let apple = Number(.99);
-        let pear = Number(.79);
-        let orange = Number(.19);
-        let grapes = Number(1.49);
-        let grapefruit = Number(1.79);
-        let kiwi = Number(.79);
-        let apricots = Number(1.29);
-
         if (day <= 7) {
             let count;
             let price;
+            let total;
             let menu = prompt("Which fruit would you like to purchase [1-7]");
+            
                 switch (menu) {
                     case "1":
                         ("apple");
-                        price = .99;
+                        price = Number(.99);
                         count = prompt("How many apples");
-                        document.getElementById("total").innerHTML = count + "Apples  " + "&nbsp&nbsp&nbsp&nbsp" + "  $" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Apples  " + "&nbsp&nbsp&nbsp&nbsp" + "  $" + total;
+                        console.log(total);
+
                             break
                     case "2":
                         ("pear");
                         price = .79;
                         count = prompt("How many pears");
-                        document.getElementById("total").innerHTML = count + "Pears" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Pears" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
                             break;
                     case "3":
                         ("orange");
                         price = 1.19;
                         count = prompt("How many oranges");
-                        document.getElementById("total").innerHTML = count + "Oranges" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Oranges" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
                             break;
                     case "4":
                         ("grapes");
                         price = 1.49;
                         count = prompt("How many grapes");
-                        document.getElementById("total").innerHTML = count + "Grapes" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Grapes" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
                             break;
                     case "5":
                         ("grapefruit");
                         price = 1.79;
                         count = prompt("How many grapefruit");
-                        document.getElementById("total").innerHTML = count + "Grapefruits" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Grapefruits" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
                             break;
                     case "6":
                         ("kiwi");
                         price = .79;
                         count = prompt("How many kiwis");
-                        document.getElementById("total").innerHTML = count + "Kiwis" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Kiwis" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
                             break;
                     case "7":
                         ("apricots");
                         price = 1.29;
                         count = prompt("How many apricots");
-                        document.getElementById("total").innerHTML = count + "Apricots" + "&nbsp&nbsp&nbsp&nbsp" + "$" + Number(price * count);
+                        total = Number(price * count);
+                        total = total.toFixed(2);
+                        document.getElementById("total").innerHTML = count + "Apricots" + "&nbsp&nbsp&nbsp&nbsp" + "$" + total;
             }
         }
           else {
