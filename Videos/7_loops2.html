@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops 2</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        let bands = [];
+        let input = "";
+        while(input != "XXX"){    //This will cause XXX to exit the prompt
+            input = prompt("Enter one of your favorite bands or XXX to exit:");
+            if(input != "XXX"){    //This will keep XXX from being added to the array
+                bands.push(input);   //Here is where we add the user's input to the array list
+            }
+        }
+        console.log(bands);
+        document.getElementById("output").innerHTML = input;
+
+    </script>
+    
+</body>
+</html>

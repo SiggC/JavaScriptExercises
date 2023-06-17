@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        /* The loop will iterate while x is less than 11. Once it becomes false, it will stop.
+        So basically, we start at 1 and iterate until we get to 10 and then  stop. */
+        /* let x = 1;
+
+        while(x<11){
+            console.log(x);
+            x++;
+        } */
+
+
+    /* The loop will decrement down and stop at 1 since y is greater than 0 */
+        /* let y = 100;
+
+        while(y>0){
+            console.log(y);
+            y--; // y=y-1
+        } */
+
+
+
+    /* If x mod 2 is equals equals 0
+    So, if x divided by 2 has a remainder of 0, then cosole.log x, and then decrement
+    Thie will only log even numbers */
+        let x = 100;
+
+        while(x > 0){
+            /* if(x % 2 == 0){       // This method works if we're starting with an odd # and count down from zero
+                console.log(x);
+            }
+            x--; */
+
+            /* -- OR -- */
+
+            console.log(x);  //This method only works if we're always starting with an even number and count down from zero
+            x = x - 2;
+        }
+
+        
+
+
+    </script>
+    
+</body>
+</html>
