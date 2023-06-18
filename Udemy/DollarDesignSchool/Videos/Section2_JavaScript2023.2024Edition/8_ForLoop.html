@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For loop</title>
+</head>
+<body>
+
+    <div id="output"></div>
+
+    <script>
+        /* There are three parts to the For Loop
+            1> Initialization (Initialized the couner variable) [let x = 1;]
+            2> Continuation Condition (continue looping while this is true) [x < 11;]
+            3> Counter [x++]
+            In a For Loop we put them all together, instead of on seperate lines
+            like in a While or DoWhile Loop */
+
+            let b = "BREAK HERE!!!!"
+
+        for(let x = 1; x < 11; x++){
+            console.log(x);
+        }
+
+        console.log(b);
+
+        for(y = 50; y > -1; y = y -5){
+            console.log(y);
+        }
+
+        console.log(b);
+
+        /* This is an example of an Endless Loop.
+            This happens when we create a Loop where the condition is always true.
+            This will overload the DOM and the computer's memory will cause 
+            performance problems. The Loop will never end unless we close the browser.
+            The browser will most likely freeze up and we will have to force quit.
+                        NO ENDLESS LOOPS!!!!    */
+
+        /* for(let n = 2; n > -1; x=x*x){
+            console.log(x);
+        } */
+    </script>
+    
+</body>
+</html>
